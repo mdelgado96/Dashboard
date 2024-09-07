@@ -1,19 +1,29 @@
-
 nav {
+  top: 0;
+  width: 0;
+  margin-left: -7px;
+  margin-top: -7px;
+}
+
+
+.nav_column {
   width: 50px;
   height: 100vh;
-  left: 0px;
   border: 1px;
   border-style: solid;
-  border-color: gray;
+  border-color: lightgray;
 }
 
 .nav_line {
   position: relative;
   height: 1px;
-  background-color: grey;
+  background-color: lightgray;
 }
 
 .nav_column {
   text-align: center;
+}
+
+.nav_logo {
+  display: flex;
 }
