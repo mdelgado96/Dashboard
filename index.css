@@ -10,6 +10,9 @@
 
 i {
   font-family: Roboto-Bold;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
 
 .flex {
@@ -31,9 +34,10 @@ nav {
 }
 
 .nav_column_open {
-  width: 200px;
+  width: 180px;
   height: 100vh;
   padding-left: 10px;
+  padding-top: 10px;
   border: 1px;
   border-style: solid;
   border-color: lightgray;
@@ -43,6 +47,8 @@ nav {
 .nav_column_closed {
   width: 50px;
   height: 100vh;
+  padding-left: 10px;
+  padding-top: 10px;
   border: 1px;
   border-style: solid;
   border-color: lightgray;
@@ -63,4 +69,9 @@ nav {
 .nav_icon {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.close_nav_icon {
+  width: 20px;
+  padding-right: 5px;
 }
