@@ -27,6 +27,11 @@ i {
   width: 25px;
 }
 
+.nav_btn {
+  border: 0;
+  background-color: rgb(255, 255, 255);
+}
+
 nav {
   width: 0;
   margin-left: -7px;
