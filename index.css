@@ -23,13 +23,13 @@ i {
   width: 110px;
 }
 
-.close_nac_icon {
+.close_nav_icon {
   width: 25px;
 }
 
 .nav_btn {
   border: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
 }
 
 nav {
@@ -50,13 +50,13 @@ nav {
 }
 
 .nav_column_closed {
-  width: 50px;
+  width: 65px;
   height: 100vh;
-  padding-left: 10px;
   padding-top: 10px;
   border: 1px;
   border-style: solid;
   border-color: lightgray;
+  background-color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -71,9 +71,18 @@ nav {
   justify-content: space-between;
 }
 
-.nav_icon {
+.nav_icon{
   margin-top: 20px;
   margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_icons_open {
+  display: none;
+}
+
+.nav_icons_closed {
 }
 
 .close_nav_icon {
