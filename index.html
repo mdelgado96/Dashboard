@@ -10,14 +10,20 @@
     <nav>
       <div id="side_bar" class="nav_column_closed">
         <div class="nav_toggle">
-          <div class="nav_logo">
+          <div id="sidebar_close" class="nav_logo">
             <img class="logotype_pic" src="/assets/icons/Logotype-cropped.svg" alt="" />
-            <button class="nav_btn">
-              <img class="close_nav_icon" src="/assets/icons/open-nav-icon.svg" onclick="closeNav()" />
+            <button id="nav_btn_id" class="nav_btn" onclick="openNav()" >
+              <img class="close_nav_icon" src="/assets/icons/open-nav-icon.svg"/>
+            </button>
+          </div>
+          <div id="sidebar_open" class="nav_logo none">
+            <img class="logotype_pic" src="/assets/icons/Logotype.svg"/>
+            <button id="nav_btn_id" class="nav_btn" onclick="closeNav()" >
+              <img class="close_nav_icon" src="/assets/icons/close-nav-icon.svg"/>
             </button>
           </div>
         </div>
-        <div class="nav_icons_open">
+        <div class="nav_icons_open none">
           <div class="nav_icon flex">
             <img src="/assets/icons/dashboard-icon.svg" alt="" /><i>Dashboard</i>
           </div>

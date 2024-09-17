@@ -23,10 +23,6 @@ i {
   width: 110px;
 }
 
-.close_nav_icon {
-  width: 25px;
-}
-
 .nav_btn {
   border: 0;
   background-color: transparent;
@@ -78,7 +74,7 @@ nav {
   justify-content: center;
 }
 
-.nav_icons_open {
+.none {
   display: none;
 }
 
