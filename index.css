@@ -67,11 +67,17 @@ nav {
   justify-content: space-between;
 }
 
-.nav_icon{
+.nav_icon {
   margin-top: 20px;
   margin-bottom: 20px;
   align-items: center;
   justify-content: center;
+}
+
+.nav_icon_op {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .none {
