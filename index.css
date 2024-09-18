@@ -21,7 +21,9 @@ i {
 
 .logotype_pic {
   width: 110px;
-}
+  /* transition: 0.1s; */
+}  
+
 
 .nav_btn {
   border: 0;
@@ -43,6 +45,7 @@ nav {
   border-style: solid;
   border-color: lightgray;
   text-align: start;
+  transition: 0.8s;
 }
 
 .nav_column_closed {
@@ -54,6 +57,8 @@ nav {
   border-color: lightgray;
   background-color: rgb(255, 255, 255);
   text-align: center;
+  overflow-x: hidden;
+  /* transition: .3s; */
 }
 
 .nav_line {
@@ -65,6 +70,7 @@ nav {
 .nav_logo {
   display: flex;
   justify-content: space-between;
+  /* transition: 0.5s; */
 }
 
 .nav_icon {
@@ -72,6 +78,7 @@ nav {
   margin-bottom: 20px;
   align-items: center;
   justify-content: center;
+  transition: 1s;
 }
 
 .nav_icon_op {
@@ -85,6 +92,7 @@ nav {
 }
 
 .nav_icons_closed {
+  /* transition: 10s; */
 }
 
 .close_nav_icon {
