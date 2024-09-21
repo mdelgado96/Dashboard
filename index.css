@@ -89,6 +89,10 @@ i {
   transition: 1s;
 }
 
+.nav_sidebar_hover:hover {
+  background-color: #b7bbff;
+}
+
 .nav_icon_op {
   margin-top: 20px;
   margin-bottom: 20px;
