@@ -33,8 +33,7 @@ i {
 
 .logotype_pic {
   width: 110px;
-}  
-
+}
 
 .nav_btn {
   border: 0;
@@ -44,6 +43,21 @@ i {
 .sidebar {
   margin-left: -7px;
   margin-top: -7px;
+  max-width: 190px;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.top_nav {
+  position: absolute;
+  top: 2px;
+  left: 69px;
+  height: 60px;
+  width: 93vw;
+  border: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  z-index: -1;
 }
 
 .nav_column_open {
@@ -54,12 +68,13 @@ i {
   border: 1px;
   border-style: solid;
   border-color: lightgray;
+  background-color: white;
   text-align: start;
   transition: 0.8s;
 }
 
 .nav_column_closed {
-  position: absolute;
+  /* position: fixed; */
   width: 65px;
   height: 100vh;
   padding-top: 10px;
@@ -100,19 +115,22 @@ i {
 }
 
 .close_nav_icon {
+  width: 24px;
+}
+
+.close_nav_icon:hover {
+  background-color: #b7bbff;
+  border-radius: 20px;
+}
+
+.open_nav_icon {
   width: 20px;
   padding-right: 5px;
 }
 
-.top_nav {
-  position: absolute;
-  top: 2px;
-  left: 69px;
-  height: 60px;
-  width: 93vw;
-  border: 1px;
-  border-style: solid;
-  border-color: lightgray;
+.open_nav_icon:hover {
+  background-color: #b7bbff;
+  border: 10px;
 }
 
 .top_nav_row {
