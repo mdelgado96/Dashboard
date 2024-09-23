@@ -49,7 +49,7 @@ i {
   margin-top: -7px;
   max-width: 190px;
   background-color: transparent;
-  /* z-index: 100; */
+  z-index: 10;
 }
 
 .top_nav {
@@ -57,7 +57,9 @@ i {
   top: 2px;
   left: 69px;
   height: 60px;
-  width: 93vw;
+  /* max-width: 1000px; */
+  width: 75vw;
+  min-width: 1100px;
   border: 1px;
   border-style: solid;
   border-color: lightgray;
@@ -76,11 +78,10 @@ i {
   background-color: white;
   text-align: start;
   transition: 0.8s;
-  z-index: 100;
+  z-index: 10;
 }
 
 .nav_column_closed {
-  /* position: fixed; */
   width: 65px;
   height: 100vh;
   padding-top: 10px;
@@ -90,6 +91,7 @@ i {
   background-color: rgb(255, 255, 255);
   text-align: center;
   overflow-x: hidden;
+  z-index: 10;
 }
 
 .nav_line {
@@ -197,4 +199,7 @@ i {
   grid-row: 1;
   border: 1px solid lightgray;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
