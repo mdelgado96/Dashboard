@@ -141,6 +141,8 @@ i {
   border: 10px;
 }
 
+/* Top Nav */
+
 .top_nav_row {
   height: 100%;
   width: 100%;
@@ -171,6 +173,8 @@ i {
   justify-content: center;
 }
 
+/* Cards section */
+
 .num_cards {
   position: absolute;
   height: 150px;
@@ -192,7 +196,7 @@ i {
   grid-auto-columns: 1fr;
   grid-auto-rows: 140px;
   border-radius: 5px;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .grid_card {
@@ -202,4 +206,21 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: white;
+  padding: 16px;
+}
+
+.gct_text {
+  font-family: Roboto-Bold;
+  font-size: 16px;
+}
+
+.gcn_text {
+  font-family: Roboto-Bold;
+  font-size: 28px;
+}
+
+.gcb_text {
+  font-family: Roboto-Regular;
+  font-size: 16px;
 }
