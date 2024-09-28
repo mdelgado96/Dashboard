@@ -1,5 +1,9 @@
 const api = 'https://dummyjson.com/users';
-const userCardTemplate = document.querySelector("[data-user-template]");
+const userIncomeTemplate = document.querySelector("[data-income-template]");
+const userProfitTemplate = document.querySelector("[data-profit-template]");
+const userViewsTemplate = document.querySelector("[data-views-template]");
+const userRateTemplate = document.querySelector("[data-rate-template]");
+const userCardContainer = document.querySelector("[data-user-cards-container]");
 
 function openNav() {
     document.getElementById("side_bar").classList.remove('nav_column_closed');
@@ -22,8 +26,26 @@ function closeNav() {
 fetch('https://dummyjson.com/users/1')
 .then(res => res.json())
 .then(data => {
-    const card = userCardTemplate.content.cloneNode(true);
-    const income = card.querySelector("[data-num]");
-    income.textContent = data.income;
-    console.log(income);
+    const incomeCard = userIncomeTemplate.content.cloneNode(true);
+    const profitCard = userProfitTemplate.content.cloneNode(true).children[0];
+    const viewCard = userViewsTemplate.content.cloneNode(true).children[0];
+    const rateCard = userRateTemplate.content.cloneNode(true).children[0];
+
+    const income = incomeCard.querySelector("[data-income-num]");
+    const profit = profitCard.querySelector("[data-profit-num]");
+    const view = viewCard.querySelector("[data-view-num]");
+    const rate = rateCard.querySelector("[data-rate-num]");
+
+    income.textContent = data.height;
+    profit.textContent = data.age;
+    view.textContent = data.lastName;
+    rate.textContent = data.maidenName;
+
+    userCardContainer.append(income);
+    userCardContainer.append(profit);
+    userCardContainer.append(view);
+    userCardContainer.append(rate);
+
+    console.log(data);
+    console.log(incomeCard);
 });

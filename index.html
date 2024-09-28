@@ -196,48 +196,54 @@
     </nav>
 
     <section id="numbers_cards" class="num_cards">
-      <!-- <div class="numcards_row"> -->
-      <div class="grid">
-        <template data-user-template>
-        <div class="grid_card">
+      <div class="grid" data-user-cards-container>
+        <template data-income-template>
+          <div class="grid_card">
             <div class="grid_card_title">
               <i class="gct_text">Total Income</i>
             </div>
-            <div class="grid_card_num" data-num><i class="gcn_text">&#36 </i></div>
+            <div class="grid_card_num"><i class="gcn_text" data-income-num></i></div>
             <div class="grid_card_bottom">
               <div class="gcb_UpOrDown"></div>
               <i class="gcb_text">Compared to last month</i>
             </div>
           </div>
         </template>
-        <div class="grid_card">
-          <div class="grid_card_title"><i class="gct_text">Profit</i></div>
-          <div class="grid_card_num"><i class="gcn_text">&#36 34565</i></div>
-          <div class="grid_card_bottom">
-            <div class="gcb_UpOrDown"></div>
-            <i class="gcb_text">Compared to last month</i>
+        <template data-profit-template>
+          <div class="grid_card">
+            <div class="grid_card_title"><i class="gct_text">Profit</i></div>
+            <div class="grid_card_num"><i class="gcn_text" data-profit-num></i></div>
+            <div class="grid_card_bottom">
+              <div class="gcb_UpOrDown"></div>
+              <i class="gcb_text">Compared to last month</i>
+            </div>
           </div>
-        </div>
-        <div class="grid_card">
-          <div class="grid_card_title"><i class="gct_text">Total views</i></div>
-          <div class="grid_card_num"><i class="gcn_text">&#36 34565</i></div>
-          <div class="grid_card_bottom">
-            <div class="gcb_UpOrDown"></div>
-            <i class="gcb_text">Compared to last month</i>
+        </template>
+        <template data-views-template>
+          <div class="grid_card">
+            <div class="grid_card_title">
+              <i class="gct_text">Total views</i>
+            </div>
+            <div class="grid_card_num"><i class="gcn_text" data-view-num></i></div>
+            <div class="grid_card_bottom">
+              <div class="gcb_UpOrDown"></div>
+              <i class="gcb_text">Compared to last month</i>
+            </div>
           </div>
-        </div>
-        <div class="grid_card">
-          <div class="grid_card_title">
-            <i class="gct_text">Conversion rate</i>
+        </template>
+        <template data-rate-template>
+          <div class="grid_card">
+            <div class="grid_card_title">
+              <i class="gct_text">Conversion rate</i>
+            </div>
+            <div class="grid_card_num"><i class="gcn_text" data-rate-num></i></div>
+            <div class="grid_card_bottom">
+              <div class="gcb_UpOrDown"></div>
+              <i class="gcb_text">Compared to last month</i>
+            </div>
           </div>
-          <div class="grid_card_num"><i class="gcn_text">34565%</i></div>
-          <div class="grid_card_bottom">
-            <div class="gcb_UpOrDown"></div>
-            <i class="gcb_text">Compared to last month</i>
-          </div>
-        </div>
+        </template>
       </div>
-      <!-- </div> -->
     </section>
 
     <div class="footer"></div>
