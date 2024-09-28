@@ -25,5 +25,5 @@ fetch('https://dummyjson.com/users/1')
     const card = userCardTemplate.content.cloneNode(true);
     const income = card.querySelector("[data-num]");
     income.textContent = data.income;
-    
+    console.log(income);
 });
