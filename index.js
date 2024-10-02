@@ -26,30 +26,30 @@ function closeNav() {
 fetch("https://dummyjson.com/users/1")
   .then((res) => res.json())
   .then((data) => {
+    console.log(data);
     const incomeCard = userIncomeTemplate.content.cloneNode(true).children[0];
     const profitCard = userProfitTemplate.content.cloneNode(true).children[0];
     const viewCard = userViewsTemplate.content.cloneNode(true).children[0];
     const rateCard = userRateTemplate.content.cloneNode(true).children[0];
+
+    console.log(incomeCard);
 
     const income = incomeCard.querySelector("[data-income-num]");
     const profit = profitCard.querySelector("[data-profit-num]");
     const view = viewCard.querySelector("[data-view-num]");
     const rate = rateCard.querySelector("[data-rate-num]");
 
+    console.log(income);
+
     income.textContent = data.height;
     profit.textContent = data.age;
     view.textContent = data.lastName;
     rate.textContent = data.maidenName;
 
-    const test = userIncomeTemplate.appendChild(income);
-    // needs to append inside eache template instead of to the overall 
-    userIncomeTemplate.appendChild(income)
-    userCardContainer.append(profit);
-    userCardContainer.append(view);
-    userCardContainer.append(rate);
+    userCardContainer.getElementsByClassName("gcn_text").textContent = income;
+    userCardContainer.append(profit); // 28
+    userCardContainer.append(view);   // Johnson
+    userCardContainer.append(rate);   // Smith
 
-    // console.log(userCardContainer.append(income));
-    console.log(test);
-    console.log(data);
     console.log(incomeCard);
   });
