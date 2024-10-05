@@ -27,7 +27,7 @@ fetch("https://dummyjson.com/users/1")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
-    const incomeCard = userIncomeTemplate.content.cloneNode(true).children[0];
+    const incomeCard = userIncomeTemplate.content.cloneNode(true).children[0]; 
     const profitCard = userProfitTemplate.content.cloneNode(true).children[0];
     const viewCard = userViewsTemplate.content.cloneNode(true).children[0];
     const rateCard = userRateTemplate.content.cloneNode(true).children[0];
@@ -47,6 +47,7 @@ fetch("https://dummyjson.com/users/1")
     rate.textContent = data.maidenName;
 
     userCardContainer.getElementsByClassName("gcn_text").textContent = income;
+    // must append the whole card and not just one line
     userCardContainer.append(profit); // 28
     userCardContainer.append(view);   // Johnson
     userCardContainer.append(rate);   // Smith
