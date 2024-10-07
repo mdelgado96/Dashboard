@@ -48,6 +48,7 @@ fetch("https://dummyjson.com/users/1")
 
     userCardContainer.getElementsByClassName("gcn_text").textContent = income;
     // must append the whole card and not just one line
+    // still searching this issue
     userCardContainer.append(profit); // 28
     userCardContainer.append(view);   // Johnson
     userCardContainer.append(rate);   // Smith
