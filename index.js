@@ -41,7 +41,7 @@ fetch("https://dummyjson.com/users/1")
 
     console.log(income);
 
-    income.textContent = data.height;
+    income.children = data.height;
     profit.textContent = data.age;
     view.textContent = data.lastName;
     rate.textContent = data.maidenName;
