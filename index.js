@@ -26,6 +26,7 @@ function closeNav() {
 fetch("https://dummyjson.com/users/1")
   .then((res) => res.json())
   .then((data) => {
+    console.log(data);
     const incomeCard = userIncomeTemplate.content.cloneNode(true).children[0]; 
     const profitCard = userProfitTemplate.content.cloneNode(true).children[0];
     const viewCard = userViewsTemplate.content.cloneNode(true).children[0];
@@ -38,8 +39,8 @@ fetch("https://dummyjson.com/users/1")
 
     income.textContent = data.height;
     profit.textContent = data.age;
-    view.textContent = data.lastName;
-    rate.textContent = data.maidenName;
+    view.textContent = data.weight;
+    rate.textContent = data.address.coordinates.lat;
 
     userCardContainer.append(incomeCard);
     userCardContainer.append(profitCard);
