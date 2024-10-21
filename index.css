@@ -224,3 +224,21 @@ i {
   font-family: Roboto-Regular;
   font-size: 16px;
 }
+
+.sales_overview {
+  position: absolute;
+  left: 90px;
+  top: 285px;
+  height: 300px;
+  width: 800px;
+  background-color: aqua;
+}
+
+.sales_region {
+  position: absolute;
+  height: 300px;
+  width: 330px;
+  left: 910px;
+  top: 285px;
+  background-color: aqua;
+}
