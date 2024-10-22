@@ -242,3 +242,22 @@ i {
   top: 285px;
   background-color: aqua;
 }
+
+.so_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0px;
+}
+
+.so_subTitle {
+  display: flex;
+}
+
+.so_text {
+  font-size: 24px;
+  font-family: Roboto-Regular;
+}
+
+.total_revenue {
+  font-size: large;
+}
